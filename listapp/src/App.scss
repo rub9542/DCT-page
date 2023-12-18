@@ -1,0 +1,329 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #9e96df;
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px 10px 30px;
+    background: #162740;
+    border: transparent;
+    width: 80%;
+    height: 80%;
+    .row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #edeef0;
+      border-radius: 30px;
+      margin: 1% 0;
+      .check-btn {
+        height: 2.5em;
+        width: 2.5em;
+        border-radius: 50%;
+        margin-left: 1%;
+      }
+      .checked {
+        background-color: #ff5945;
+      }
+      .unchecked {
+        border: 2px solid #ff5945;
+      }
+      input {
+        width: 100%;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 12px;
+        font-size: 17px;
+        padding-left: 20px;
+      }
+      button {
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding: 15px 50px;
+        border-radius: 30px;
+        background-color: #ff5945;
+        color: #fff;
+        font-size: 18px;
+        transition: all 0.25s ease;
+      }
+      button:hover {
+        filter: brightness(0.8);
+      }
+    }
+
+    .title {
+      padding: 3px 6px;
+      color: #f1faee;
+      background-color: #264456;
+    }
+    .todo-list {
+      .top-options {
+        display: flex;
+        justify-content: space-between;
+        .search {
+          width: 45%;
+        }
+        select {
+          appearance: none;
+          -webkit-appearance: none;
+          width: 50%;
+          font-size: 1.15rem;
+          padding: 0.675em 6em 0.675em 1em;
+          background-color: #fff;
+          border: 1px solid #caced1;
+          border-radius: 0.25rem;
+          color: #000;
+          cursor: pointer;
+          outline: none;
+        }
+      }
+    }
+    button {
+      background-color: rgba(51, 51, 51, 0.05);
+      border-radius: 8px;
+      border-width: 0;
+      color: #333333;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 20px;
+      list-style: none;
+      margin: 0;
+      padding: 10px 12px;
+      text-align: center;
+      transition: all 200ms;
+      vertical-align: baseline;
+      white-space: nowrap;
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: manipulation;
+    }
+
+    [data-rbd-drag-handle-context-id="0"] {
+      margin: 3% 0;
+    }
+    [data-rbd-droppable-context-id="0"] {
+      overflow-anchor: none;
+      overflow: auto;
+      max-height: 27em;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .todo-item {
+      .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #edeef0;
+        border-radius: 30px;
+      }
+    }
+    .strike p {
+      color: #888;
+      text-decoration: line-through;
+    }
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 300px) {
+  .App {
+    .todo-app {
+      .todo-item {
+        .top-options {
+          .dropdown {
+            padding: 0.675em 1em 0.675em 1em !important;
+          }
+        }
+      }
+      .row {
+        .btns {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          button {
+            width: 10%;
+            padding: 5px 50px !important;
+            margin: 3% !important;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 301px) {
+  .App {
+    .todo-app {
+      .todo-item {
+        .top-options {
+          .dropdown {
+            padding: 0.675em 1em 0.675em 1em !important;
+          }
+        }
+      }
+      .row {
+        .btns {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          button {
+            width: 10%;
+            padding: 5px 50px !important;
+            margin: 3% !important;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 401px) {
+  .App {
+    .todo-app {
+      .todo-item {
+        .top-options {
+          .dropdown {
+            padding: 0.675em 1em 0.675em 1em !important;
+          }
+        }
+      }
+      .row {
+        .btns {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          button {
+            width: 10%;
+            padding: 5px 50px !important;
+            margin: 3% !important;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 901px) {
+  .App {
+    .todo-app {
+      .todo-item {
+        .top-options {
+          .dropdown {
+            padding: 0.675em 1em 0.675em 1em !important;
+          }
+        }
+      }
+      .row {
+        .btns {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          button {
+            width: 10%;
+            padding: 5px 50px !important;
+            margin: 3% !important;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1400px) and (min-width: 1201px) {
+  .App {
+    .todo-app {
+      .todo-item {
+        .top-options {
+          .dropdown {
+            padding: 0.675em 1em 0.675em 1em !important;
+          }
+        }
+      }
+      .row {
+        .btns {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          button {
+            width: 10%;
+            padding: 5px 50px !important;
+            margin: 3% !important;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1600px) and (min-width: 1401px) {
+  .App {
+    .todo-app {
+      .todo-item {
+        .top-options {
+          .dropdown {
+            padding: 0.675em 1em 0.675em 1em !important;
+          }
+        }
+      }
+      .row {
+        .btns {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          button {
+            width: 10%;
+            padding: 5px 50px !important;
+            margin: 3% !important;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1800px) and (min-width: 1601px) {
+  .App {
+    .todo-app {
+      .todo-item {
+        .top-options {
+          .dropdown {
+            padding: 0.675em 1em 0.675em 1em !important;
+          }
+        }
+      }
+      .row {
+        .btns {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          button {
+            width: 10%;
+            padding: 5px 50px !important;
+            margin: 3% !important;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
